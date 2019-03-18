@@ -27,6 +27,7 @@ class ISLA extends JFrame implements ActionListener{
 	String htmlpath;
 	String encodedhtml;
 	String redirecturl;
+	String htmlfilename;
 	File img;
 	File html;
 	JTextField url;
@@ -154,7 +155,7 @@ class ISLA extends JFrame implements ActionListener{
 				System.out.println("a");
 				penandink.close();
 				testtxt1.setForeground(Color.BLACK);
-				testtxt1.setText("Writing is completed");
+				testtxt1.setText("It's all up!");
 			} catch (IOException e) {
 				testtxt1.setForeground(Color.RED);
 				testtxt1.setText("Error 02a - IOException at writing html");
